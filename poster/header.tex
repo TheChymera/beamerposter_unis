@@ -1,0 +1,21 @@
+\documentclass[xcolor=table,english]{beamer}
+\usepackage[orientation=portrait,size=a0]{sty/beamerposter}
+\mode<presentation>{
+	\usepackage{sty/beamerthemeZH}
+}
+\usepackage[utf8]{inputenc}
+\usepackage{ragged2e}
+\usepackage{verbatimbox}
+\usepackage[font=small,justification=justified]{caption}
+\usepackage{array}
+\usepackage{tabularx}
+
+\input{common/header.tex}
+
+% This does not go into the common header as it needs to be imputed after the document-specific variables are defined.
+\input{/usr/share/repsep/functions.py}
+
+\newcolumntype{Z}{>{\centering\arraybackslash}X} % centered tabularx columns
+
+\newlength{\columnheight}
+\setlength{\columnheight}{0.881\textheight}

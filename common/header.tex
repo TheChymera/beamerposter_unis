@@ -1,0 +1,24 @@
+\usepackage[british]{babel} % decent hyphenation, avoiding e.g. anal-ysis
+\usepackage[iso]{isodate}
+\usepackage{sansmath}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{makecell}
+\usepackage{minted}
+\usepackage{multicol}
+\usepackage{siunitx}
+\usepackage{subcaption}
+%\usepackage{amsmath}
+\newcommand{\mathdefault}[1]{#1}
+\usepackage[section]{placeins}
+
+% Needs to be loaded after hyperref
+\usepackage{cleveref}
+
+\usepackage{import}
+% SIunitx customizations detect-all will use the current font for typesetting
+\sisetup{per-mode=symbol, detect-all, range-units = single}
+\newcommand\SIci[5]{\SI{#1}{#2}, {#3}CI: \SIrange{#4}{#5}{#2}}
+
+% Fix for matplotlib PGF wonkiness which isn't interpreted correctly by pdflatex
+\DeclareUnicodeCharacter{2212}{-}
