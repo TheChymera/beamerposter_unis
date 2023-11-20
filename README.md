@@ -25,5 +25,6 @@ For usage on custom projects, the `poster-<UNI>.tex` file can be modified to fit
 
 ## Examples
 
-[<img src="gallery/poster-ZH.png">]
-[<img src="gallery/poster-Dartmouth.png">]
+<img src="gallery/poster-Dartmouth.png">
+
+<img src="gallery/poster-ZH.png">
