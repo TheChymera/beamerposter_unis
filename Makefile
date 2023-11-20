@@ -8,6 +8,11 @@ poster-ZH:		poster-ZH.tex
 poster-Dartmouth:	poster-Dartmouth.tex
 	rubber --pdf --unsafe poster-Dartmouth.tex
 
+.PHONY: gallery
+gallery: poster-Dartmouth poster-ZH
+	convert -density 100 -trim poster-Dartmouth.pdf -quality 100 gallery/poster-Dartmouth.jpg
+	convert -density 100 -trim poster-ZH.pdf -quality 100 gallery/poster-ZH.jpg
+
 clean:
 	@rm -f *.vrb
 	@rm -rf .tex_traces
