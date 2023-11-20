@@ -1,0 +1,2 @@
+# Don't track top-level PDFs unless forced
+*.pdf
