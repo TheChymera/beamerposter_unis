@@ -10,8 +10,8 @@ poster-Dartmouth:	poster-Dartmouth.tex
 
 .PHONY: gallery
 gallery: poster-Dartmouth poster-ZH
-	convert -density 100 -trim poster-Dartmouth.pdf -quality 100 gallery/poster-Dartmouth.jpg
-	convert -density 100 -trim poster-ZH.pdf -quality 100 gallery/poster-ZH.jpg
+	convert -density 100 -trim poster-Dartmouth.pdf -quality 100 gallery/poster-Dartmouth.png
+	convert -density 100 -trim poster-ZH.pdf -quality 100 gallery/poster-ZH.png
 
 clean:
 	@rm -f *.vrb
